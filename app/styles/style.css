@@ -1,0 +1,11 @@
+body {
+  background-color: #77ffff;
+}
+
+.header {
+  color: #000;
+}
+
+.header__table {
+  border-collapse: collapse;
+}

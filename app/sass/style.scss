@@ -1,0 +1,10 @@
+body{
+  background-color: #77ffff;
+}
+
+.header{
+  color: #000;
+  &__table{
+    border-collapse: collapse;
+  }
+}
