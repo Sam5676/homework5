@@ -1,13 +1,736 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Kino50</title>
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <meta charset="utf-8">
+    <title>Популярные фильмы онлайн в хорошем качестве</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon_K5.ico">
 </head>
 <body>
-<header>
+<header class="header">
+    <button class="menu-drop glyphicon glyphicon-menu-hamburger"></button>
+    <h2 class="logo"><a class="logo__link" href="#" >Kino50.net</a></h2>
+    <button class="bookmark glyphicon glyphicon-bookmark"></button>
+    <button class="search glyphicon glyphicon-search"></button>
 </header>
+<nav class="nav">
+    <ul class="menu nav__menu">
+        <li class="menu__item"><a class="menu__item-link" href="1">Фильмы</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="2">Сериалы</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="3">Мультсериалы</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="4">Мультфильмы</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="5">Аниме</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="6">Телешоу</a> </li>
+        <li class="menu__item"><a class="menu__item-link" href="7">Подборки</a> </li>
+    </ul>
+</nav>
+<main>
+    <aside class="aside">
+        <ul class="menu aside__menu">
+            <li class="menu__item"><a class="menu__item-link menu__item-link_size-2" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class=" menu__item-link" href="#"></a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link menu__item-link_size-2" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#"></a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link menu__item-link_size-2" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#"></a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Фильмы</a></li>
+        </ul>
+    </aside>
+    <div class="sections-container">
+        <section class="title-n-sort">
+            <h1 class="title-n-sort__title">Популярные фильмы онлайн в хорошем качестве. Смотреть бесплатно</h1>
+            <nav class="title-n-sort__sort">
+                <ul class="menu title-n-sort__menu">
+                    <li class="menu__item"><span>Сортировать:</span></li>
+                    <li class="menu__item"><button class="menu__item-button">По популярности</button></li>
+                    <li class="menu__item"><button class="menu__item-button">По новизне</button></li>
+                    <li class="menu__item"><button class="menu__item-button">По сборах</button></li>
+                    <li class="menu__item"><button class="menu__item-button">По бюджету</button></li>
+                    <li class="menu__item"><button class="menu__item-button">Лучшие</button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="main-list-films container-fluid">
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+            <figure class="film-box main-list-films__film-box col-xs-6 col-sm-4 col-md-3 col-lg-2" >
+                <a class="each-movie" href="#">
+                    <img src="src/img/deadpool_insing.jpg" alt="Deadpool is insing" class="each-movie__picture">
+                </a>
+                <figcaption class="movies-title">
+                    <a class="movies-title__link" href="#">Дэдпул: Настоящая любовь не умрёт (2017)</a>
+                </figcaption>
+                <div class="rate-and-quality">
+                    <a href="@" class="stars">
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                        <span class="star glyphicon glyphicon-star"></span>
+                    </a>
+                    <a href="@" class="dvd">
+                        <img class="dvd__img" src="src/img/dvd_logo.png" alt="Blu-ray logo">
+                    </a>
+
+                </div>
+            </figure>
+        </section>
+        <nav class="pagination">
+            <ul class="menu pagination__menu">
+                <li class="menu__item"><button  class="menu__item-button glyphicon glyphicon-arrow-left"></button></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">1</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">2</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">3</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">4</a></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">5</a></li>
+                <li class="menu__item"><p class="menu__item-link">...</p></li>
+                <li class="menu__item"><button class="menu__item-button glyphicon glyphicon-arrow-right"></button></li>
+            </ul>
+        </nav>
+            <p class="information-about-us">К вашим услугам каталог самых популярных фильмов. Для просмотра вы выбираете понравившийся фильм, нажимаете не него и получаете краткое описание, а также перечень ссылок, где его можно посмотреть онлайн. Кинофильмы в каталоге располагаются по дате премьеры. Здесь вы можете смотреть фильмы 2019 года. Вы можете также воспользоваться фильтром, сортирующим фильмы по жанрам и выбрать кино в рамках любимого вами жанра. Фильтр находится в колонке слева. Мы также позаботились, о том чтобы вам не пришлось долго выбирать достойный просмотра фильм — мы отобрали самое лучшее для вас. На нашем сайте вы получите отличное качество просмотра огромного количества видео</p>
+    </div>
+</main>
+<footer>
+    <a class="contacts" href="#">Контакты</a>
+    <button class="languages" type="button">Русский</button>
+    <button class="languages" type="button">Українська</button>
+</footer>
 </body>
 </html>

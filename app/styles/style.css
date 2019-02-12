@@ -1,11 +1,232 @@
+@font-face {
+  font-family: logo-font;
+  src: url(../src/fonts/Baloo-google-font.ttf);
+}
+
+a {
+  color: #fff;
+}
+
 body {
-  background-color: #77ffff;
+  background-color: #223344;
+  color: #fff;
 }
 
 .header {
-  color: #000;
+  height: 10vh;
+  padding: 5vh 1% 6vh 1%;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr 1fr;
+  align-content: center;
+  background-color: #e66700;
 }
 
-.header__table {
-  border-collapse: collapse;
+.header .logo {
+  margin: 0;
+  font-family: logo-font;
+  font-size: 30px;
+}
+
+.header .menu-drop, .header .search, .header .bookmark {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  height: 30px;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__item {
+  flex-grow: 0.035;
+  height: 20px;
+}
+
+.menu__item-link:hover {
+  color: #fff;
+}
+
+.nav {
+  background-color: #e66700;
+  padding-bottom: 3vh;
+  padding-left: 5%;
+}
+
+.nav__menu .menu__item-link:hover {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+main .aside {
+  flex: 1;
+  border-right: 1px solid #252525;
+  padding: 20px 15px;
+  box-shadow: 0 6px 20px #252525;
+}
+
+main .aside__menu {
+  flex-direction: column;
+}
+
+main .aside__menu .menu__item-link {
+  text-decoration: underline;
+}
+
+main .aside__menu .menu__item-link_size2 {
+  padding-bottom: 20px;
+}
+
+main .sections-container {
+  flex: 8;
+}
+
+main .sections-container .title-n-sort {
+  padding: 2vh 0;
+}
+
+main .sections-container .title-n-sort__title {
+  font-size: 22px;
+  padding: 2vh 3% 5vh 3%;
+}
+
+main .sections-container .title-n-sort__sort .menu__item-button:nth-child(2) {
+  color: #e66700;
+}
+
+main .sections-container .title-n-sort__sort span {
+  padding-left: 3%;
+}
+
+main .sections-container .title-n-sort__sort .menu__item-button {
+  background-color: transparent;
+  border: none;
+}
+
+main .sections-container .title-n-sort .title-n-sort__menu {
+  padding-left: 3%;
+  font-size: 14px;
+}
+
+main .sections-container .title-n-sort__sort::after {
+  content: "";
+  margin-top: 3vh;
+  display: block;
+  border-top: 1px solid rgba(245, 245, 245, 0.5);
+}
+
+main .sections-container .main-list-films {
+  margin-top: 10px;
+}
+
+main .sections-container .film-box {
+  background-color: #4b5564;
+  padding: 0;
+  height: 45vh;
+  border: 7px solid #234;
+  border-radius: 2px;
+}
+
+main .sections-container .film-box:hover::before {
+  content: "Comedy";
+  color: #fff;
+  text-shadow: 1px 4px 5px #000;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10%;
+  width: 100%;
+  height: 10vh;
+  background-image: linear-gradient(to top, rgba(20, 30, 40, 0.3), #141e28);
+  position: absolute;
+}
+
+main .sections-container .movies-title {
+  padding: 0px 5px 0;
+  font-size: 14px;
+}
+
+main .sections-container .movies-title__link {
+  color: white;
+}
+
+main .sections-container .movies-title__link:hover {
+  text-decoration: none;
+}
+
+main .sections-container .stars {
+  display: block;
+}
+
+main .sections-container .star {
+  color: orange;
+}
+
+main .sections-container .stars:last-child {
+  color: gray;
+}
+
+main .sections-container .each-movie__picture {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+main .sections-container .rate-and-quality {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .sections-container .dvd {
+  float: right;
+  display: inline-block;
+}
+
+main .sections-container .dvd__img {
+  width: 45px;
+}
+
+main .pagination {
+  display: block;
+  padding-left: 20px;
+}
+
+main .pagination .menu__item-button {
+  border: none;
+  background-color: transparent;
+}
+
+main .information-about-us {
+  padding: 15px 20px 100px;
+}
+
+footer {
+  background-color: #3e4042;
+  height: 12vh;
+  padding-top: 30px;
+}
+
+footer .contacts {
+  color: gray;
+}
+
+footer .contacts:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+footer .languages {
+  background-color: transparent;
+  color: gray;
+  border: none;
+  margin-right: 3vw;
+  float: right;
 }
